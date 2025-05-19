@@ -17,6 +17,14 @@ interface Product {
   discount?: number;
   category: string;
   imageQuery: string;
+  ingredients: string[];
+  nutritionalInfo: {
+    calories: number;
+    protein: number;
+    fat: number;
+    carbs: number;
+  };
+  type: string;
 }
 
 const Homepage: React.FC<{ searchQuery: string }> = ({ searchQuery }) => {

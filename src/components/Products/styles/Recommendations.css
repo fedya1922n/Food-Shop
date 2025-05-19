@@ -1,3 +1,85 @@
+/* src/components/Products/styles/Recommendations.css */
+
+/* Базовые стили Swiper */
+.swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-sizing: content-box;
+  align-items: stretch;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-slide .product-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Стили навигации */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #fff;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+  font-weight: bold;
+  content: '';
+}
+
+.swiper-button-prev::after {
+  content: '◄';
+}
+
+.swiper-button-next::after {
+  content: '►';
+}
+
+.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* Существующие стили */
 .recommendations {
   margin: 30px 0;
   padding: 15px;
@@ -19,24 +101,6 @@
 .recommendations h2::before {
   content: '✨';
   font-size: 1.5rem;
-}
-
-.swiper-wrapper {
-  display: flex;
-  align-items: stretch; 
-}
-
-.swiper-slide {
-  height: auto !important; 
-  display: flex;
-  flex-direction: column;
-}
-
-.swiper-slide .product-card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
 
 @media (max-width: 768px) {

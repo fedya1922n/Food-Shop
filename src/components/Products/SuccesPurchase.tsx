@@ -1,11 +1,11 @@
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './styles/Cart.css';
 
 const SuccesPurchase: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
   const [purchases, setPurchases] = useState<any[]>([]);
 
   useEffect(() => {

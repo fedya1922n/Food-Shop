@@ -1,3 +1,4 @@
+// src/components/Products/Recommendations.tsx
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
@@ -5,8 +6,6 @@ import type { SwiperProps } from 'swiper/react';
 import ProductCard from './ProductCard';
 import { useTranslation } from 'react-i18next';
 import DOMPurify from 'dompurify';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import './styles/Recommendations.css';
 
 interface Product {
