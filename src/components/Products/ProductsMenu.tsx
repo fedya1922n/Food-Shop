@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import mockProducts from '../../../mockProducts';
@@ -29,7 +29,6 @@ const ProductsMenu: React.FC = () => {
 
   const filteredProducts = mockProducts.filter((product) => product.type === type);
 
-  const translatedType = DOMPurify.sanitize(t(`productTypes.${type}`, { defaultValue: type }));
 
   return (
     <div className="products-menu">

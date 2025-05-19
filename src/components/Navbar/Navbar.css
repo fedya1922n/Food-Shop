@@ -8,6 +8,8 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
 .search-suggestions {
@@ -112,6 +114,9 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap; 
+  justify-content: flex-end; 
+  width: auto; 
 }
 
 .navbar-actions select {
@@ -300,15 +305,18 @@
     flex-direction: column;
     gap: 15px;
     padding: 15px;
+    width: 100%; /* Убедимся, что ширина полная */
   }
 
   .navbar-search {
-    width: 100%;
+    width: 100%; /* Поиск на всю ширину */
+    max-width: 500px; /* Ограничим максимум для удобства */
   }
 
   .navbar-actions {
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap; /* Разрешаем перенос элементов */
   }
 
   .navbar-catalog-dropdown {
@@ -321,7 +329,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .cart-notification, .language-notification {
+  .cart-notification,
+  .language-notification {
     right: 15px;
     top: 150px;
     width: 90%;
@@ -338,6 +347,7 @@
   .navbar-actions {
     flex-direction: column;
     gap: 10px;
+    width: 100%;
   }
 
   .navbar-actions select,
@@ -350,13 +360,20 @@
     grid-template-columns: 1fr;
   }
 
-  .cart-notification, .language-notification {
+  .cart-notification,
+  .language-notification {
     top: 200px;
   }
 
-  .back-button, .home-button {
+  .back-button,
+  .home-button {
     padding: 8px 12px;
     font-size: 0.9rem;
+    width: 45%; /* Кнопки занимают половину ширины */
+  }
+
+  .navbar-search {
+    width: 100%;
   }
 }
 
