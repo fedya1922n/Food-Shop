@@ -347,7 +347,8 @@
       "purchaseHistory": " Xaridlar tarixi",
      "purchase":"Buyurtma",
      "clearHistory":"Xarid Tarixini tozalash",
-     "noPurchaseHistory":"Sizning xarid tarixingiz bosh"
+     "noPurchaseHistory":"Sizning xarid tarixingiz bosh",
+     "fullNotification":"Sizning savatingiz to'lgan ."
 
   }
 }

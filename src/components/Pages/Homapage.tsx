@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ProductList from '../Products/ProductList';
 import Recommendations from '../Products/Recommendations';
 import mockProducts from '../../../mockProducts';
-import { isValidProduct, isValidImageUrl } from '../context/CartContext';
+import { isValidProduct,} from '../context/cartUtils';
 import DOMPurify from 'dompurify';
 import { debounce } from 'lodash';
 import '../Products/styles/Homepage.css';

@@ -333,7 +333,8 @@
         "purchaseHistory": "Purchase History",
         "purchase":"Order",
         "clearHistory":"Clear Purchase History",
-        "noPurchaseHistory": "Your cart history is empty"
+        "noPurchaseHistory": "Your cart history is empty",
+        "fullNotification":"Your cart is full. Please remove some items to add new ones."
 
   }
   ,

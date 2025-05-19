@@ -1,10 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import { isValidImageUrl, useCart } from "../context/CartContext";
+import {useCart } from "../context/CartContext";
 import mockProducts from "../../../mockProducts";
+import { isValidImageUrl } from "../context/cartUtils";
 import DOMPurify from "dompurify";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import React from "react";
 
 const Cart: React.FC = () => {
   const { cart, setCart } = useCart();

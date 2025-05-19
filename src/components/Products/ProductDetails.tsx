@@ -3,7 +3,7 @@ import { useParams, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import DOMPurify from 'dompurify';
 import mockProducts from '../../../mockProducts';
-import { isValidImageUrl } from '../context/CartContext';
+import { isValidImageUrl } from '../context/cartUtils';
 import './styles/ProductDetails.css';
 
 interface Product {
@@ -19,7 +19,7 @@ interface Product {
 
 const ProductDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const { state } = useLocation<{ product: Product }>();
+  const { state } = useLocation();
   const { t, i18n } = useTranslation();
   const [product, setProduct] = useState<Product | null>(null);
 

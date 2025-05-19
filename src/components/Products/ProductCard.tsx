@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useCart } from '../context/CartContext';
 import { Link } from 'react-router-dom';
 import DOMPurify from 'dompurify';
-import { isValidImageUrl, isValidProduct } from '../context/CartContext';
+import { isValidImageUrl, isValidProduct } from '../context/cartUtils';
 import './styles/ProductCard.css';
 
 interface Product {
